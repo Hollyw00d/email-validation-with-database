@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('America/Los_Angeles');
+
 /*--------------------BEGINNING OF THE CONNECTION PROCESS------------------*/
 //define constants for db_host, db_user, db_pass, and db_database
 //adjust the values below to match your database settings

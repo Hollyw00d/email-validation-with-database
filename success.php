@@ -1,6 +1,10 @@
 <?php
 session_start();
 require_once('includes/new-connection.php');
+
+$email_table_query = "SELECT * FROM emails";
+
+$emails = fetch($email_table_query);
 ?>
 <!doctype html>
 <html lang="en">
@@ -20,6 +24,20 @@ require_once('includes/new-connection.php');
     Thank you!</p>
 
     <h3>Email Addresses Entered</h3>
+
+    <table id="email-addresses">
+    <?php
+    foreach(array_reverse($emails) as $record)
+    {
+        echo "
+        <tr>
+            <td>{$record['email']}</td>
+            <td>{$record['updated_at']}</td>
+        </tr>
+        ";
+    }
+    ?>
+    </table>
 
     <p>&nbsp;</p>
 

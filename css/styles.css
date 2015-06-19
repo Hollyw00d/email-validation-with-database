@@ -16,3 +16,12 @@ body {
 .success {
     color: green;
 }
+
+#email-addresses {
+    border-collapse: collapse;
+}
+
+#email-addresses td {
+    border: 2px solid black;
+    padding: 10px;
+}
