@@ -1,0 +1,18 @@
+/****** All CSS ******/
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    width: 960px;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
